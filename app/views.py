@@ -26,7 +26,7 @@ def display_form(request, form_id):
                     responses = responses)
         new_respond.save()
 
-        return redirect('/ad')
+        return redirect('/tesekkurederim')
     return render(request, 'form.html', {'model': models.CustomForm.objects.get(id = form_id)} )
 
 def export_to_excel(request):
