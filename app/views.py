@@ -47,3 +47,6 @@ def export_to_excel(request):
         writer.writerow( ( [respond.name, respond.surname, respond.num] + respond.responses.split('&') ) )    
 
     return response
+
+def tesekkur(request):
+    return render(request, 'tesekkur.html')
